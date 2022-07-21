@@ -1,0 +1,36 @@
+/* fokus */
+a.nav-link:focus{
+    background-color:var(--secondary);
+    color: var(--white);
+    border-left: 4px solid orangered;
+    font-weight: bold;
+}
+
+a.nav-video:focus .card{
+    background-color:var(--secondary) !important;
+    border-left: 4px solid orangered;
+}
+
+/* .slider-videoPopuler .nav-video .card,
+.slider-videoNew .nav-video .card,
+.slider-result .nav-video .card {
+    height: 120px !important;
+} */
+
+/* ukuran layar kecil tambah heightnya*/
+@media (max-width: 768px) {
+    /* .slider-videoPopuler .nav-video .card,
+    .slider-videoNew .nav-video .card,
+    .slider-result .nav-video .card {
+        height: 190px !important;
+    } */
+}
+
+/* ukuran layar kecil tambah heightnya*/
+@media (max-width: 576px) {
+    /* .slider-videoPopuler .nav-video .card,
+    .slider-videoNew .nav-video .card,
+    .slider-result .nav-video .card {
+        height: 145px !important;
+    } */
+}

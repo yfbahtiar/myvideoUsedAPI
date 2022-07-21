@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Aplikasi menonton video yang terhubung dengan server lokal">
+    <meta name="author" content="@menpc3o">
+    <title>Judul Video</title>
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+    <link href="css/video.css" rel="stylesheet" type="text/css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="c-video">
+
+        <div class="video-header">
+            <div class="video-title"></div>
+            <div class="video-info">
+                <button id="btn-video-info" class="fas fa-info-circle"></button>
+            </div>
+        </div>
+
+        <video class="video" id="video"></video>
+
+        <div class="video-ended">
+            <p id="video-ended-status">
+                <small id="video-ended-countDown"></small>
+            </p>
+        </div>
+
+        <div class="controls">
+            <!-- <div class="video-caption">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sunt consectetur accusamus illum
+                iure? Quidem, quia. Debitis eaque ratione illum molestias ducimus consequatur expedita. Qui eum non
+                magnam itaque aspernatur nam architecto illo voluptate, minus iste soluta iusto corrupti similique!
+                Doloremque, reprehenderit.
+            </div> -->
+            <div class="video-progress">
+                <input type="range" class="video-progress-filled" min="0" max="100" step="0.01" value="0"
+                    oninput="inSeekTime(this.value)" onfocus="foSeekTime(this.value)"
+                    onkeydown="kdSeekTime(event)"></input>
+            </div>
+            <div class="buttons">
+                <button id="play-pause"></button>
+                <button id="mute-unmute" class="fas fa-volume-up"></button>
+                <button id="video-next" class="fas fa-step-forward"></button>
+                <button id="fullscreen" class="fas fa-expand"></button>
+                <button id="autoplay" class="fas fa-toggle-off"></button>
+                <button id="search" class="fas fa-search"></button>
+                <button id="home" class="fas fa-home"></button>
+            </div>
+            <div class="time">
+                <span id="autoplay-status">Autoplay mati</span>
+                <span class="current">0:00</span>&nbsp;/&nbsp;<span class="duration">0:00</span>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/video.js"></script>
+
+</html>
